@@ -1,5 +1,7 @@
 package com.learning.basics
 
+
+
 object ScalaTypes_07 extends App {
   //Any - supertype : defines equals, hashCode, and toString : direct subclasses: AnyVal, AnyRef
 //AnyVal -  Value Type : Double, Float, Long, Int, Short, Byte, Char, Unit, and Boolean
@@ -12,6 +14,8 @@ object ScalaTypes_07 extends App {
     'c',  // a character
     true, // a boolean value
     () => "an anonymous function that  a string"  //<function>
+    ,Seq("Empty_DF","Invalid SCN Number"),
+    List('a',2,"cool")
   )
   anyExample.foreach(element => println(element))
 

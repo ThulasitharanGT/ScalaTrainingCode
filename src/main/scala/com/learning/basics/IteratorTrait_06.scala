@@ -18,7 +18,8 @@ trait Iterator[A] {
 //Extending the trait Iterator[A] requires a type A and implementations of the methods hasNext and next.
 //Use the extends keyword to extend a trait. Then implement any abstract members of the trait using the override keyword:
 class NumIterator(to: Int) extends Iterator[Int] {
-  private var current = 0
+  private var current =0
+ // private var current = 10
   override def hasNext: Boolean = current < to
   override def next(): Int =  {
     if (hasNext) {
@@ -39,9 +40,9 @@ class Kitten(val name: String) extends Animal
 object IteratorTrait_06 extends App{
   val iterator = new NumIterator(10)
   iterator.next()  // prints 0
-  iterator.next()  // prints 1
-
-
+  iterator.next()// prints 1
+ //  println(iterator.next())  // prints 0
+ //  println(iterator.next())  // prints 1
   val Kitten = new Kitten("Harry")
   val Puppy = new Puppy("Sally")
   val animals = ArrayBuffer.empty[Animal]
