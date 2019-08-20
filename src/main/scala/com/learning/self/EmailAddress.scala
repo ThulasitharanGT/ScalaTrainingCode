@@ -1,5 +1,4 @@
 package com.learning.self
-import com.learning.self.Message._
 
 object EmailAddress {
   def apply(uname: String, dname: String) = uname + "@" + dname
